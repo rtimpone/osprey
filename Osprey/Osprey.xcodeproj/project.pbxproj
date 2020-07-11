@@ -8,14 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FB94E08F24BA17E60080718F /* Osprey.h in Headers */ = {isa = PBXBuildFile; fileRef = FB94E08D24BA17E60080718F /* Osprey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB94E0B624BA18050080718F /* FrameworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94E0B524BA18050080718F /* FrameworkTest.swift */; };
+		FB94E0B824BA19EF0080718F /* HTTPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94E0B724BA19EF0080718F /* HTTPBody.swift */; };
+		FB94E0BA24BA1C6B0080718F /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94E0B924BA1C6B0080718F /* HTTPRequest.swift */; };
+		FB94E0BC24BA1CFF0080718F /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94E0BB24BA1CFF0080718F /* HTTPResponse.swift */; };
+		FB94E0BE24BA1D8A0080718F /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94E0BD24BA1D8A0080718F /* HTTPError.swift */; };
+		FB94E0C024BA1E090080718F /* HTTPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94E0BF24BA1E090080718F /* HTTPResult.swift */; };
+		FB94E0C224BA24A90080718F /* HTTPLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94E0C124BA24A90080718F /* HTTPLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB94E08A24BA17E60080718F /* Osprey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Osprey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB94E08D24BA17E60080718F /* Osprey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Osprey.h; sourceTree = "<group>"; };
 		FB94E08E24BA17E60080718F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB94E0B524BA18050080718F /* FrameworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTest.swift; sourceTree = "<group>"; };
+		FB94E0B724BA19EF0080718F /* HTTPBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBody.swift; sourceTree = "<group>"; };
+		FB94E0B924BA1C6B0080718F /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		FB94E0BB24BA1CFF0080718F /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		FB94E0BD24BA1D8A0080718F /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		FB94E0BF24BA1E090080718F /* HTTPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResult.swift; sourceTree = "<group>"; };
+		FB94E0C124BA24A90080718F /* HTTPLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +58,14 @@
 		FB94E08C24BA17E60080718F /* Osprey */ = {
 			isa = PBXGroup;
 			children = (
-				FB94E08D24BA17E60080718F /* Osprey.h */,
 				FB94E08E24BA17E60080718F /* Info.plist */,
-				FB94E0B524BA18050080718F /* FrameworkTest.swift */,
+				FB94E08D24BA17E60080718F /* Osprey.h */,
+				FB94E0B724BA19EF0080718F /* HTTPBody.swift */,
+				FB94E0BD24BA1D8A0080718F /* HTTPError.swift */,
+				FB94E0C124BA24A90080718F /* HTTPLoading.swift */,
+				FB94E0B924BA1C6B0080718F /* HTTPRequest.swift */,
+				FB94E0BB24BA1CFF0080718F /* HTTPResponse.swift */,
+				FB94E0BF24BA1E090080718F /* HTTPResult.swift */,
 			);
 			path = Osprey;
 			sourceTree = "<group>";
@@ -135,7 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB94E0B624BA18050080718F /* FrameworkTest.swift in Sources */,
+				FB94E0C024BA1E090080718F /* HTTPResult.swift in Sources */,
+				FB94E0BC24BA1CFF0080718F /* HTTPResponse.swift in Sources */,
+				FB94E0C224BA24A90080718F /* HTTPLoading.swift in Sources */,
+				FB94E0BA24BA1C6B0080718F /* HTTPRequest.swift in Sources */,
+				FB94E0BE24BA1D8A0080718F /* HTTPError.swift in Sources */,
+				FB94E0B824BA19EF0080718F /* HTTPBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        FrameworkTest.printHelloOsprey()
+        
+        var request = HTTPRequest()
+        request.host = "swapi.dev"
+        request.path = "/api/people/1/"
+        request.parameters = [
+            "test": "true",
+            "attempt": "1"
+        ]
+        
+        URLSession.shared.load(request: request) { result in
+            print(result)
+        }
     }
 }
